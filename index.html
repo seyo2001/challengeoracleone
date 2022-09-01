@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Primer Challege</title>
+  </head>
+
+  <body>
+
+   <div class="loader"></div>
+
+    <div class="contenedorPrincipal">
+
+      <div class="logo">
+        <img
+          class="logoImagen"
+          src="./assets/img/Logo.png"
+          alt="logo de Alura"
+        />
+        <h1 class="titulo">Ejercicio de Encriptador</h1>
+      </div>
+
+
+      <div class="panelIzquierdo">
+         <input id="textoEncriptar" class="txttexto" type="text" placeholder="Inserte su texto a Encriptar"/>
+      </div>
+
+
+      <div class="panelDerecho">
+        <img id="imgDerecha" src="./assets/img/muneico.png" alt="Muñeco" />
+        <h1 id="textImagenDerecha"> Ningun mensaje fue encontrado </h1>
+        <textarea id="textArea" rows="8" cols="20" placeholder = "Ingrese aqui el texto que desea Encriptar o Desencriptar"></textarea>
+        <button type="button" id="btnCopiar" onclick="copy()"> !Copiar¡ </button>
+      </div>
+
+      
+      <div class="botones">
+        <p>Ingese solo texto en minusculas y sin acentos</p>
+        <button type="button" id="btnEncriptar" onclick="encriptacion()">Encriptar</button>
+        <button type="button" id="btnDesencriptar" onclick="desencriptacion()">
+          Desencriptar
+        </button>
+      </div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+          $(".loader").fadeOut(4000);
+      });
+      </script>
+  </body>
+</html>
